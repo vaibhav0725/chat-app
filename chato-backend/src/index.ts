@@ -1,9 +1,5 @@
 import { WebSocket, WebSocketServer } from "ws";
 const wss=new WebSocketServer({port:8080});
-// function roomGenerator(){
-//     let x = Math.floor((Math.random() * 9000) + 1000);
-//     return x;
-// }
 interface User{
     socket:WebSocket; 
     room:string;
